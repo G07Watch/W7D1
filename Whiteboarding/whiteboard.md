@@ -95,7 +95,7 @@ end
 class Node
 
   def dfs(target, prc=nil)
-    prc ||= Proc.new{|node| node== target}
+    prc ||= Proc.new{|node| node== gitarget}
 
     return self if prc.call(self)
 
